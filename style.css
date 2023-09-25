@@ -1,116 +1,30 @@
-/* :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-body {
-  margin: 60px auto;
-  max-width: 800px;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-  margin: 0;
-}
-
-h1 {
-  font-size: 96px;
-}
-
-h2 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-}
-
-p {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-} */
 :root {
     --border: 1px solid blueviolet;
-    --back-ground-color: rgb(232, 204, 243);
+    --back-ground-color: rgb(248, 218, 241);
     --displey: flex;
     --margin: 10px;
     --padding: 10px;
     --text-align: center;
+    --font-family: 'Playfair Display', serif ;
   }
-  
+
   h1,
-  h2 {
+  h2 ,
+  h3
+  {
     color: blueviolet;
     text-align: var(--text-align);
+    font-family: var(--font-family);
   }
-  
+
   .button {
     display: var(--displey);
-    justify-content: space-evenly;
+    justify-content: center;
   }
   
   #contactme {
     padding: 10px;
+    margin-right: 10px;
     border: var(--border);
     background-color: blueviolet;
   }
@@ -121,12 +35,22 @@ p {
   
   #aboutme {
     padding: 10px;
+    margin-left: 10px;
     border: var(--border);
   }
   
+.my-hero {
+  background-color: var(--back-ground-color);
+  padding: 25px;
+}
+
+
+
   a {
     text-decoration: none;
     color: blueviolet;
+    font-family: var(--font-family);
+    font-weight: bolder;
   }
   
   .contact {
@@ -134,14 +58,6 @@ p {
     display: var(--displey);
     justify-content: space-around;
   }
-  
-  /* #contact,
-  #about {
-    text-align: var(--text-align);
-    background-color: var(--back-ground-color);
-    margin: var(--margin);
-    padding: var(--padding);
-  } */
   
   #mymail {
     text-align: var(--text-align);
@@ -155,11 +71,20 @@ p {
   }
   
   .my_style {
-    /* border: var(--border); */
     background-color: var(--back-ground-color);
   }
+
   p {
     color: blueviolet;
     font-weight: 450;
+    font-family: var(--font-family);
+    font-size: 17px;
+    text-align: justify;
   }
   
+ 
+@media (max-width : 768px) {
+  p {
+    text-align: center;
+  }
+} 
